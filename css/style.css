@@ -207,7 +207,7 @@ ul {
 .site-btn.btn-4 {
 	background: #f1f1f1;
 	color: #777;
-	transition: .2s;
+	transition: .5s;
 	/*border-radius: 3px;*/
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
 }
@@ -218,7 +218,7 @@ ul {
 	outline: none;
 }
 .site-btn.btn-4:hover {
-	box-shadow: 0 3px 6px 0 rgba(0,0,0,0.36);
+	box-shadow: 0 3px 10px 0 rgba(255,255,255,0.26);
 }
 
 /*------------------
@@ -285,7 +285,7 @@ ul {
 }
 
 .header-section {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -297,11 +297,14 @@ ul {
 	transition: all 0.4s ease 0s;
 }
 
+.header-section .logo-link {
+	display: block;
+}
+
 .header-section .logo {
 	display: inline-block;
 	float: left;
 	padding-top: 10px;
-
 }
 
 .header-section .logo img {
@@ -317,10 +320,11 @@ ul {
 	padding-left: 5px;
 }
 .header-section .logo .logo-name {
-	font-size: 2.9rem;
+	font-size: 3.2rem;
 	font-weight: 1;
     letter-spacing: 0em;
     line-height: .8;
+    color: #333 !important;
 	/*margin-top: -5px;*/
 	/*font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;*/
 }
@@ -412,7 +416,7 @@ ul {
 	margin-top: 35px;
 	font-weight: 100;
 	/*font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif !important;*/
-	display: none;
+	/*display: none;*/
 }
 
 .owl-carousel .owl-nav {
@@ -582,7 +586,7 @@ ul {
 
 .my-btn:hover {
     background: #009efa;
-    transition-delay: 2s;
+    transition-delay: 1.5s;
     box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.4);
     transform: rotate(-20deg) skew(20deg);
 }
@@ -598,7 +602,7 @@ ul {
     pointer-events: none;
     transform-style: linear;
     transition-property:width,opacity,transform,box-shadow ;
-    transition-delay: 0, 1s ;
+    transition-delay: 0, .3s ;
     transition-duration: .5s ;
 }
 
@@ -1294,7 +1298,7 @@ ul {
 	top: 0;
 	z-index: 3;
 	background: #28559A;
-	opacity: .7
+	opacity: .5
 }
 
 
@@ -1758,16 +1762,7 @@ ul {
 ==============================*/
 .lets-talk-section {
 	position: relative;
-	background: #4B9FE1;
-}
-.lets-talk-section h1 {
-	font-family: 'roboto' !important;
-	color: #fff;
-	margin-bottom: 20px;
-}
-.lets-talk-section:hover .site-btn.btn-4 {
-	background: #fff;
-	color: #555;
+	background: #150734;
 }
 
 .lets-talk-section	.container {
@@ -1775,6 +1770,19 @@ ul {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+	z-index: 5;
+}
+
+.lets-talk-section h1 {
+	font-family: 'roboto' !important;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.lets-talk-section:hover .site-btn.btn-4 {
+	background: #fff;
+	color: #555;
 }
 
 
