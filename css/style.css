@@ -940,7 +940,7 @@ ul {
 
 .form-class textarea {
 	width: 100%;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	border: none;
 	background: #f6edfb;
 	padding: 15px 20px;
@@ -1000,8 +1000,22 @@ ul {
 .social-media {
 	text-align: center;
 }
-.social-midia i {
-	margin: 0 100px !important;
+.social-media i {
+	margin: 10px 30px 0;
+	color: #fff;
+	font-size: 24px;
+	transition: .5s;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.social-media i:hover {
+	background: #fff;
+	color: #3778C2;
 }
 
 
@@ -1009,15 +1023,20 @@ ul {
 	Footer section
 --------------------------*/
 .footer-section {
-	background: #220c3b;
+	background: #150734;
 	text-align: center;
 }
 
 .footer-section h2 {
-	color: #6a23b5;
+	color: #3778C2;
 	font-size: 14px;
 	padding: 18px 0;
 }
+
+.footer-section h2 a {
+	color: #7ED5EA;
+}
+
 
 /*=========================
 	Other Pages
@@ -1744,7 +1763,7 @@ ul {
 .lets-talk-section h1 {
 	font-family: 'roboto' !important;
 	color: #fff;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 .lets-talk-section:hover .site-btn.btn-4 {
 	background: #fff;
@@ -1777,6 +1796,63 @@ ul {
 
 /* ===========================
 	End of Who we are page
+==============================*/
+
+/* ===========================
+	Join us sectoin
+==============================*/
+.join-us-section {
+	position: relative;
+	background: #fff;
+	padding: 100px 0;
+}
+
+.join-us-header {
+	/*background: #4B9FE1;*/
+	padding-top: 0;
+	text-align: center;
+}
+
+.join-us-header .logo {
+	width: 200px;
+	margin: auto;
+	padding-bottom: 50px;
+}
+.join-us-header .logo h1 {
+
+}
+
+
+.join-us-header h1 {
+	/*font-family: 'roboto' !important;*/
+	letter-spacing: .5px;
+	/*color: #fff;*/
+	margin-bottom: 20px;
+}
+
+.join-us-header p {
+	/*color: #fff;*/
+}
+
+.join-us-header:hover .site-btn.btn-4 {
+	background: #fff;
+	color: #555;
+}
+
+.join-us-header	.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.join-us-section .col-md-6:nth-child(1) {
+	border-right: 1px solid #ddd;
+}
+
+/* ===========================
+	End of Join us section
 ==============================*/
 
 
