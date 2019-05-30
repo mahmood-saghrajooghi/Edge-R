@@ -555,6 +555,11 @@ ul {
 
 }
 
+.about-contant .row {
+	border-right: 1px solid #4b9fe1;
+	border-left: 1px solid #4b9fe1;
+}
+
 .about-contant p {
 	color: #fff;
 }
@@ -858,6 +863,14 @@ ul {
 	z-index: 5;
 }
 
+.team-page-section .col-sm-3 {
+	transition: .5s;
+}
+
+.team-page-section .col-sm-3:hover {
+	box-shadow: 0 0 5px rgba(0,0,0,.5)
+}
+
 .member {
 	text-align: center;
 	padding: 20px 0;
@@ -865,6 +878,7 @@ ul {
 
 .member img {
 	margin-bottom: 30px;
+	border-radius: 50%;
 }
 
 .member h2 {
