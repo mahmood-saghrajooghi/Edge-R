@@ -11,10 +11,23 @@ $(document).ready(function() {
 			ScrollReveal().reveal('.services-section .col-md-4:nth-child(5)' , {duration: 2000,delay:450 , opacity: '0', distance: '50%' , origin: 'bottom'});
 			ScrollReveal().reveal('.services-section .col-md-4:nth-child(6)' , {duration: 2000,delay:550 , opacity: '0', distance: '50%' , origin: 'bottom'});
 			
+
+			// page links
+			ScrollReveal().reveal('.page-info h2' , {duration: 1000,delay:500 , opacity: '0', distance: '80%' , origin: 'top'});
+			ScrollReveal().reveal('.page-info a' , {duration: 1000,delay:1000 , opacity: '0', distance: '80%' , origin: 'left'});
+			ScrollReveal().reveal('.page-info span' , {duration: 1000,delay:1500 , opacity: '0', distance: '80%' , origin: 'right'});
+
+
 			// Team Section scroll reveal
-			ScrollReveal().reveal('.team-section .row .col-sm-4:nth-child(1)' , {duration: 1000,delay:150 , opacity: '0', distance: '30%' , origin: 'bottom'});
-			ScrollReveal().reveal('.team-section .row .col-sm-4:nth-child(2)' , {duration: 1000,delay:250 , opacity: '0', distance: '30%' , origin: 'bottom'});
-			ScrollReveal().reveal('.team-section .row .col-sm-4:nth-child(3)' , {duration: 1000,delay:450 , opacity: '0', distance: '30%' , origin: 'bottom'});
+			ScrollReveal().reveal('.team-section .row .col-sm-3:nth-child(1)' , {duration: 1000,delay:150 , opacity: '0', distance: '30%' , origin: 'bottom'});
+			ScrollReveal().reveal('.team-section .row .col-sm-3:nth-child(2)' , {duration: 1000,delay:250 , opacity: '0', distance: '30%' , origin: 'bottom'});
+			ScrollReveal().reveal('.team-section .row .col-sm-3:nth-child(3)' , {duration: 1000,delay:450 , opacity: '0', distance: '30%' , origin: 'bottom'});
+			ScrollReveal().reveal('.team-section .row .col-sm-3:nth-child(4)' , {duration: 1000,delay:450 , opacity: '0', distance: '30%' , origin: 'bottom'});
+			ScrollReveal().reveal('.team-section .row .col-sm-3:nth-child(5)' , {duration: 1000,delay:450 , opacity: '0', distance: '30%' , origin: 'bottom'});
+			ScrollReveal().reveal('.team-section .row .col-sm-3:nth-child(6)' , {duration: 1000,delay:450 , opacity: '0', distance: '30%' , origin: 'bottom'});
+			ScrollReveal().reveal('.team-section .row .col-sm-3:nth-child(7)' , {duration: 1000,delay:450 , opacity: '0', distance: '30%' , origin: 'bottom'});
+			ScrollReveal().reveal('.team-section .row .col-sm-3:nth-child(8)' , {duration: 1000,delay:450 , opacity: '0', distance: '30%' , origin: 'bottom'});
+			ScrollReveal().reveal('.team-section .row .col-sm-3:nth-child(9)' , {duration: 1000,delay:450 , opacity: '0', distance: '30%' , origin: 'bottom'});
 
 
 			// What we do page in services section

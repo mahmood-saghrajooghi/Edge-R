@@ -13,6 +13,8 @@ html,
 body {
 	height: 100%;
 	font-family: "Roboto", sans-serif;
+  	scroll-behavior: smooth;
+
 }
 
 img {
@@ -138,7 +140,7 @@ ul {
 .section-title:after {
 	content: "";
 	position: absolute;
-	left: 50%;
+	left: 50% !important;
 	top: 0;
 	width: 5px;
 	height: 30px;
@@ -178,10 +180,10 @@ ul {
 .site-btn {
 	font-family: "Oswald", sans-serif;
 	font-size: 15px;
-	color: #641fb1;
+	color: #0F2557;
 	display: inline-block;
 	text-transform: uppercase;
-	background: #7ED5EA;
+	background: #63BCE5;
 	padding: 15px 50px;
 	font-weight: 500;
 	letter-spacing: 1px;
@@ -198,7 +200,7 @@ ul {
 
 .site-btn.btn-3 {
 	background: transparent;
-	color: #6a23b5;
+	color: #0F2557;
 	border: 1px solid #6a23b5;
 	padding: 14px 50px;
 }
@@ -206,7 +208,7 @@ ul {
 	background: #f1f1f1;
 	color: #777;
 	transition: .2s;
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
 }
 
@@ -214,6 +216,9 @@ ul {
 .site-btn:focus {
 	text-decoration: none;
 	outline: none;
+}
+.site-btn.btn-4:hover {
+	box-shadow: 0 3px 6px 0 rgba(0,0,0,0.36);
 }
 
 /*------------------
@@ -548,6 +553,15 @@ ul {
 
 .about-contant p {
 	color: #fff;
+}
+
+.about-contant .ER-heading {
+	background: #150734 ;
+	color: #7ED5EA ;
+}
+.about-contant .ER-heading:hover {
+	background: #7ED5EA ;
+	color: #150734 ;
 }
 
 /* MY button in about contant */
@@ -916,6 +930,7 @@ ul {
 	border: none;
 	background: #f6edfb;
 	padding: 17px 20px;
+	font-size:13px;
 }
 
 .form-class input[type="text"]:focus,
@@ -930,6 +945,7 @@ ul {
 	background: #f6edfb;
 	padding: 15px 20px;
 	height: 260px;
+	font-size:13px;
 }
 
 .form-class textarea:focus,
@@ -978,6 +994,14 @@ ul {
 
 .contact-info .con-item {
 	font-size: 14px;
+}
+
+/* Social Media */
+.social-media {
+	text-align: center;
+}
+.social-midia i {
+	margin: 0 100px !important;
 }
 
 
@@ -1078,6 +1102,14 @@ ul {
 /*------------------------
 	Services Card Section
 --------------------------*/
+.services-card-section {
+	background: #28559A;
+	position: relative;
+}
+.services-card-section .container {
+	z-index: 5;
+	position: relative;	
+}
 .services-section {
 	background: #4B9FE1;
 }
@@ -1139,11 +1171,30 @@ ul {
 	Newsletter Section
 --------------------------*/
 .newsletter-section {
-	background: #2be6ab;
+	position: relative;
+	background-image: url("../img/tehran.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+
+.newsletter-section * {
+	z-index: 5;
+}
+
+.newsletter-section .container{
+	position: relative;
+}
+
+.newsletter-section .nl-container{
+	margin-left: 200px
 }
 
 .newsletter-section h2 {
-	font-size: 48px;
+	font-size: 38px;
 	color: #fff;
 	font-weight: 400;
 }
@@ -1151,23 +1202,37 @@ ul {
 /* Newsletter form */
 .nl-form {
 	padding-top: 5px;
-	text-align: right;
+	/*text-align: right;*/
 }
 
 .nl-form input[type="text"] {
 	border: none;
-	padding: 15px 30px;
-	height: 51px;
-	float: left;
-	margin-right: 30px;
+	padding: 10px 0;
+	/*float: left;*/
+	margin: 30px 0 20px;
 	width: calc(100% - 211px);
-	background: #19cc93;
+	background: none;	
+	border-bottom: 1.5px solid #fff;
 	color: #fff;
+	font-size: 18px;
+	cursor: text; 
+	z-index: 3;
+	opacity: .6;
+	transition: .3s;
 }
+
 
 .nl-form input[type="text"]:focus,
 .nl-form input[type="text"]:hover {
 	outline: none;
+}
+.nl-form input[type="text"]:focus {
+	opacity: 1;
+	border-bottom-color: #7ED5EA
+}
+
+.nl-form .site-btn:hover {
+	color: #4B9FE1;
 }
 
 .nl-form ::-webkit-input-placeholder {
@@ -1192,6 +1257,25 @@ ul {
 
 .nl-form ::-ms-input-placeholder {
 	color: #fff;
+}
+/* News Letter Overlay */
+
+.nl-description {
+	font-size: 13px;
+	color: #fff;
+	margin-bottom: 20px
+}
+
+/* News Letter Overlay */
+.nl-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	background: #28559A;
+	opacity: .7
 }
 
 
@@ -1655,7 +1739,7 @@ ul {
 ==============================*/
 .lets-talk-section {
 	position: relative;
-	background: #63BCE5;
+	background: #4B9FE1;
 }
 .lets-talk-section h1 {
 	font-family: 'roboto' !important;
