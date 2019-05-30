@@ -47,5 +47,5 @@ $(document).ready(function() {
 
 			// Let's talk section 
 			ScrollReveal().reveal('.lets-talk-section h1' , {duration: 1000,delay:150 , opacity: '0', distance: '70%' , origin: 'bottom'});
-			lets-talk-section
+			
 			});
